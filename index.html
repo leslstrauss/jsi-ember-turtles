@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+	<title>Ember Routing</title>
+  </head
+
+  <body>
+		<script src="jquery-1.10.2.js"></script>
+		<script src="handlebars-1.1.2.js"></script>
+		<script src="ember-1.7.0.js"></script>
+		<script src="app.js"></script>
+
+		<script type="text/x-handlebars" data-template-name="application">
+			<h1>Turtle Types</h1>
+			<h2>Which Turtle Are You?</h2>
+			<ul>
+				<li>
+					{{#link-to 'hare'}}Hare{{/link-to}}
+				</li>
+				<li>
+					{{#link-to 'seaturtle'}}Sea Turtle{{/link-to}}
+				</li>
+				<li>
+					{{#link-to 'snappingturtle'}}Snapping Turtle{{/link-to}}
+				</li>
+			</ul>
+			{{ outlet }}
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="index">
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="hare">
+			<h2>Hare</h2>
+			<img src="https://1.bp.blogspot.com/-_hR7ja4ElGo/UQsBaesAPPI/AAAAAAAARz4/LgFBJ4n4Sk4/s1600/hare%252520web-0184.jpg">
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="seaturtle">
+			<h2>Sea Turtle</h2>
+			<img src="you_are_here_by_unikraken-d32ncxh.png"
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="snappingturtle">
+			<h2>Snapping Turtle</h2>
+			<<img src="Thomas-Subtil.jpeg" alt="">
+		</script>
+
+  </body>
+</html>
